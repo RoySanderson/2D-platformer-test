@@ -5,9 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public PlayerHealth playerHealth;
+    public float jumpForce, moveSpeed, crouchSpeed;
     [SerializeField] private LayerMask whatIsGround;
     [SerializeField] private LayerMask whatIsCeiling;
-    [SerializeField] private float jumpForce, moveSpeed, crouchSpeed;   
+       
     [SerializeField] private Transform firepoint;
     [SerializeField] private GameObject bulletPrefab;
     private float axisX;
@@ -98,9 +100,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Trap") || collision.gameObject.CompareTag("Bullet"))
+        if (collision.gameObject.CompareTag("Trap")) //|| collision.gameObject.CompareTag("Bullet"))
         {
             Die();
+        }
+        if (collision.gameObject.CompareTag("Bullet"))
+        {
+            playerHealth.TakeDamage(3);
         }
     }
 
@@ -128,7 +134,7 @@ public class PlayerMovement : MonoBehaviour
         b.GetComponent<Projectile>().StartShoot(isFacingLeft);
     }
 
-    private void Die()
+    public void Die()
     {
         playerHead.isTrigger = true;
         playerFeet.enabled = false;
