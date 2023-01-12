@@ -11,10 +11,11 @@ public class AIPatrol : MonoBehaviour
     private float xDistToPlayer, yDistToPlayer;
     private Animator anim;
 
+    public EnemyHealth enemyHealth;
     public Rigidbody2D rb;
     public Transform groundCheck, player, firepoint;
     public LayerMask groundLayer;
-    public GameObject bulletPrefab, starPrefab;
+    public GameObject bulletPrefab, eyeGlow;
 
 
 
@@ -22,6 +23,7 @@ public class AIPatrol : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         mustPatrol = true;
+        eyeGlow.SetActive(false);
     }
 
     void Update()
@@ -40,6 +42,7 @@ public class AIPatrol : MonoBehaviour
             {
                 Flip();
             }
+            eyeGlow.SetActive(true);
             mustPatrol = false;
             rb.velocity = Vector2.zero;
             anim.enabled = false;
@@ -49,6 +52,7 @@ public class AIPatrol : MonoBehaviour
         }
         else
         {
+            eyeGlow.SetActive(false);
             mustPatrol = true;
             anim.enabled = true;
         }
@@ -73,7 +77,7 @@ public class AIPatrol : MonoBehaviour
         rb.velocity = new Vector2(patrolSpeed * Time.fixedDeltaTime, rb.velocity.y);
     }
 
-    void Flip()
+    public void Flip()
     {
         mustPatrol = false;
         transform.localScale = new Vector2(transform.localScale.x * -1, transform.localScale.y);
@@ -99,8 +103,7 @@ public class AIPatrol : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Bullet"))
         {
-            Instantiate(starPrefab, gameObject.transform.position, gameObject.transform.rotation);
-            Destroy(gameObject);
+            enemyHealth.TakeDamage(5);
         }
             
     }
