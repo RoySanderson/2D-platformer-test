@@ -9,7 +9,6 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce, moveSpeed, crouchSpeed;
     [SerializeField] private LayerMask whatIsGround;
     [SerializeField] private LayerMask whatIsCeiling;
-       
     [SerializeField] private Transform firepoint;
     [SerializeField] private GameObject bulletPrefab;
     private float axisX;
@@ -102,7 +101,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Trap")) //|| collision.gameObject.CompareTag("Bullet"))
         {
-            Die();
+            playerHealth.TakeDamage(9);
         }
         if (collision.gameObject.CompareTag("Bullet"))
         {
