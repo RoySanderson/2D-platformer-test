@@ -4919,7 +4919,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.51
+      scalar: 0.35
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -5410,7 +5410,7 @@ ParticleSystem:
     gravityModifier:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: 1
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -5464,7 +5464,7 @@ ParticleSystem:
     serializedVersion: 6
     enabled: 1
     type: 4
-    angle: 13.151283
+    angle: 44.189873
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
@@ -5550,7 +5550,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 0.5134084
+      value: 0.19033106
       mode: 0
       spread: 0
       speed:
@@ -5669,7 +5669,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 6
+      scalar: 10
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -9863,9 +9863,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b9efe1e4cff11e46876711e2899f72a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  globalLight: {fileID: 0}
   playerMovement: {fileID: 1614262869452562264}
   bloodEffect1: {fileID: 825206414}
   bloodEffect2: {fileID: 1908877210}
+  textPopup: {fileID: 7626156753290448500, guid: 989c3467237434140ba1ecd3372efd9a, type: 3}
   maxHealth: 9
   currentHealth: 0
 --- !u!1 &1614262869585200178

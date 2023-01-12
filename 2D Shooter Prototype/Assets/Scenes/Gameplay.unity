@@ -1822,17 +1822,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 621452624, guid: 65b58e382fcd81b4c812cba90aed4ff3, type: 3}
-      propertyPath: textPopup
-      value: 
-      objectReference: {fileID: 7626156753290448500, guid: 989c3467237434140ba1ecd3372efd9a, type: 3}
-    - target: {fileID: 621452624, guid: 65b58e382fcd81b4c812cba90aed4ff3, type: 3}
       propertyPath: globalLight
       value: 
       objectReference: {fileID: 118196919}
-    - target: {fileID: 1908877211, guid: 65b58e382fcd81b4c812cba90aed4ff3, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1614262869452562257, guid: 65b58e382fcd81b4c812cba90aed4ff3, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1881,14 +1873,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1614262869452562264, guid: 65b58e382fcd81b4c812cba90aed4ff3, type: 3}
-      propertyPath: bloodEffect1
-      value: 
-      objectReference: {fileID: 825206414}
-    - target: {fileID: 1614262869452562264, guid: 65b58e382fcd81b4c812cba90aed4ff3, type: 3}
-      propertyPath: bloodEffect2
-      value: 
-      objectReference: {fileID: 1908877210}
     - target: {fileID: 1946511545899035624, guid: 65b58e382fcd81b4c812cba90aed4ff3, type: 3}
       propertyPath: starsCollectedText
       value: 
@@ -2277,11 +2261,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4880129329541167389, guid: c95a306d8d1594d47b846b1128263b97, type: 3}
   m_PrefabInstance: {fileID: 785222522}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &825206414 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 825206414, guid: 65b58e382fcd81b4c812cba90aed4ff3, type: 3}
-  m_PrefabInstance: {fileID: 621452621}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &839131365
 GameObject:
@@ -6500,11 +6479,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1908877210 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1908877210, guid: 65b58e382fcd81b4c812cba90aed4ff3, type: 3}
-  m_PrefabInstance: {fileID: 621452621}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1941210182 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4880129329541167389, guid: c95a306d8d1594d47b846b1128263b97, type: 3}
