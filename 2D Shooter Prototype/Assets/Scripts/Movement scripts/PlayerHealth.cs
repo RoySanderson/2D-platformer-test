@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Experimental.Rendering.Universal;
 
 public class PlayerHealth : MonoBehaviour
 {
+    public Light2D globalLight;
     public PlayerMovement playerMovement;
     public GameObject bloodEffect1, bloodEffect2, textPopup;
-    public Light globalLight;
 
     public int maxHealth = 9;
     public int currentHealth;
@@ -18,6 +19,7 @@ public class PlayerHealth : MonoBehaviour
         bloodEffect1.SetActive(false);
         bloodEffect2.SetActive(false);
         currentHealth = maxHealth;
+        globalLight.intensity = 0.7f;
     }
 
     public void TakeDamage(int amount)
@@ -30,6 +32,7 @@ public class PlayerHealth : MonoBehaviour
                 ShowTextPopup("'OW!'");
             playerMovement.moveSpeed = 6;
             bloodEffect1.SetActive(true);
+            globalLight.intensity = 0.5f;
         }
         if (currentHealth <= 3 && currentHealth > 0)
         {
@@ -37,6 +40,7 @@ public class PlayerHealth : MonoBehaviour
                 ShowTextPopup("'AH #*@%!'");
             playerMovement.moveSpeed = 5;
             bloodEffect2.SetActive(true);
+            globalLight.intensity = 0.3f;
         }
         if (currentHealth <= 0)
         {
