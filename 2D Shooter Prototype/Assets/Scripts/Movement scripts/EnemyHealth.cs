@@ -25,7 +25,7 @@ public class EnemyHealth : MonoBehaviour
         if (currentHealth <= 5 && currentHealth > 0)
         {
             if (textPopup)
-                ShowTextPopup("'@#!'");
+                ShowTextPopup("@#!");
             damageEffect.SetActive(true);
         }
         if (currentHealth <= 0)

@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEngine.Experimental.Rendering.Universal;
+
 
 public class PlayerHealth : MonoBehaviour
 {
-    public Light2D globalLight;
+    public UnityEngine.Rendering.Universal.Light2D globalLight;
     public PlayerMovement playerMovement;
     public GameObject bloodEffect1, bloodEffect2, textPopup;
 

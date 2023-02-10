@@ -24,7 +24,7 @@ TextureImporter:
       213: 5722502054222828489
     second: Simple explosion_1_6
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -45,6 +45,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -83,6 +84,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -98,6 +100,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -190,7 +216,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 5bdf506936ffc9b10800000000000000
-      internalID: 1989745938574736821
+      internalID: -365819283544958946
       vertices: []
       indices: 
       edges: []
@@ -211,7 +237,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: e189050cc495ceaf0800000000000000
-      internalID: -365819283544958946
+      internalID: 1989745938574736821
       vertices: []
       indices: 
       edges: []
@@ -268,6 +294,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Simple explosion_1_2: 8335124299060700260
+      Simple explosion_1_6: 5722502054222828489
+      Simple explosion_1_4: -365819283544958946
+      Simple explosion_1_5: 5258827332710866230
+      Simple explosion_1_0: -4233289001445971917
+      Simple explosion_1_3: 2385211170766528126
+      Simple explosion_1_1: 1989745938574736821
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

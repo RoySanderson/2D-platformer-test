@@ -60,7 +60,7 @@ TextureImporter:
       213: -3204212454577593451
     second: tileset_preview_18
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -81,6 +81,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -119,6 +120,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 1
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -156,6 +158,18 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -568,6 +582,26 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      tileset_preview_5: -3042803798334829618
+      tileset_preview_15: 5904537123559576942
+      tileset_preview_1: 6229432665805507374
+      tileset_preview_2: -4256029816910602383
+      tileset_preview_0: -4247551107854283462
+      tileset_preview_16: -7457490379043000698
+      tileset_preview_10: -570341632540158384
+      tileset_preview_3: 5781660198558158989
+      tileset_preview_4: -7049787254072116428
+      tileset_preview_7: -3373938927590759023
+      tileset_preview_12: 2643729434808070384
+      tileset_preview_13: -8225666280947372842
+      tileset_preview_11: 3756180501228655705
+      tileset_preview_8: -1556943828898935477
+      tileset_preview_18: -3204212454577593451
+      tileset_preview_14: 2604074593303948784
+      tileset_preview_6: 34049049138057441
+      tileset_preview_9: 707111434554691175
+      tileset_preview_17: 5072192825372220257
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
